@@ -1,1 +1,7 @@
-# Placeholder for your script.
+from beacon.helper import Helper
+
+helper = Helper()
+received_xml = helper.catch_the_bit_block(Helper.url)
+outputvalue = helper.get_the_output_value(received_xml)
+OV = helper.hex_into_str(outputvalue)
+helper.print_the_outputvalue_frequency(OV)
